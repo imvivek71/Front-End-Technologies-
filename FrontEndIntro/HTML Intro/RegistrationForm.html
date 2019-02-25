@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>RegistrationForm</title>
+</head>
+<body>
+<h1>Thanks For Showing Interest</h1>
+<h2>Kindly Fill all the details and all are mandatory</h2>
+
+<form action="thanku.html" method="get">
+
+        <label for="Name">Enter your Name</label>
+        <input id="Name" type="text" pattern=".{3,15},[a-zA-Z]+" placeholder="Name" name="name" required title="Name length should be bw 3-15"><br><br><br>
+
+        <label for="mail">Enter your Email</label>
+        <input id="mail" type="email" placeholder="Email" name="email" required><br><br><br>
+
+        <label for="Age">Enter your age</label>
+        <input id="Age" type="number" placeholder="Age"name="age" required><br><br><br>
+
+         <label for="int">Select your interest</label>
+               <select id = "int">
+                   <option>Dating</option>
+                   <option>Marriage</option>
+                   <option>TimePass</option>
+               </select>
+        <br><br><br>
+
+         <h3>Are you never married</h3>
+          <label for="y">Yes</label>
+         <input id="y" type="radio" name="dating" >
+          <label for="n">No</label>
+          <input id="n" type="radio" name="dating" >
+         <br><br><br>
+         <h3>Are you alcoholic</h3>
+              <label for="D">Daily</label>
+               <input id="D" name="Alc" type="checkbox" required>
+                <label for="W">On weekends only</label>
+                <input id="W" name="Alc"type="checkbox" required>
+                 <label for="P">No</label>
+                  <input id="P" name="Alc" type="checkbox" required>
+
+
+         <br><br><br>
+
+         <label for="Fb">Enter any extra information</label><br><br><br>
+
+        <textarea id ="Fb"name="feedback" rows="8" cols="80">
+        </textarea><br>
+        <input type="submit"></form>
+    </form>
+</body>
+</html>
